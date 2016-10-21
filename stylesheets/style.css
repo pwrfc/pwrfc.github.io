@@ -3,13 +3,27 @@
 /*****************/
 
 body {
-	margin: 0;
 	padding: 0;
 	color: #333; 
 	text-align: center; 
 	font: normal 0.6em sans-serif,Arial;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+	min-height: 100%;
+	margin-bottom: -150px;
+}
+#push-header {
+	height: 50px;
+}
+#push-footer {
+	height: 160px;
+}
 /******************/
 /**** Menu Bar ****/
 /******************/
@@ -79,15 +93,6 @@ a#navbar-header:hover {
 	display: block;
 }
 
-/**************/
-/**** Page ****/
-/**************/
-
-.page {
-	padding-top: 50px;
-	padding-bottom: 100px;
-}
-
 /****************/
 /**** Footer ****/
 /****************/
@@ -103,7 +108,7 @@ a#navbar-header:hover {
 	display: inline-block;
 	margin-right: 20px;
 	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 	font-size: 20px;
 	width: 45%;
 	vertical-align: top;
@@ -113,6 +118,7 @@ a#navbar-header:hover {
 	color: gray;
 	text-decoration: none;
 	vertical-align: center;
+	font-size: 16px;
 }
 .footer-vert-block a:hover {
 	color: white;
@@ -121,12 +127,14 @@ a#navbar-header:hover {
 	color: blue;
 	font-size: 24px;
 	padding: 5px;
+	margin:2px;
 }
 .footer-vert-block p {
 	color: white;
 	font-size: 16px;
 	padding: 0px;
 }
+
 .copyright-footer {
 	font-size: 10px;
 	color: gray;
@@ -140,7 +148,7 @@ a#navbar-header:hover {
 	color: white;
 }
 .social-links {
-	margin: 10px auto; 
+	margin: 5px auto; 
 	text-align: center;
 }
 
@@ -217,6 +225,10 @@ a#navbar-header:hover {
 	margin-top: 10px;
 	margin-bottom: 2px;
 }
+.content p {
+	font-size: 18px;
+	color: black;
+}
 .content a {
 	font-size: 18px;
 	color: black;
@@ -233,4 +245,11 @@ table#contact-table td {
 
 table#contact-table a {
 	font-size: 16px;
+}
+
+table#fees-table tr,td {
+	padding: 5px;
+	text-align:left; 
+	font-size:16px;
+	border: 1;
 }

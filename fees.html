@@ -1,9 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
     <head>
+      <meta charset='utf-8'>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+
+
       <title>Philadelphia Women's Rugby Football Club</title>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
       <meta name="description" 
         content="Philadelphia Women's Rugby Football Club (PWRFC) was founded in 1976, 
         making it the most established women's rugby in the Philadelphia area. PWRFC 
@@ -13,7 +17,6 @@
         content="rugby, Philadelphia, women, women's rugby, division one rugby, team, 
         rugby team, philadelphia sports, usa rugby, montgomery county, delaware county, 
         bucks county, movers, labor, cheap movers, moving">
-      <link href="css/style.css" rel="stylesheet" type="text/css">
       <link rel="icon" type="image/jpg" href="image/balls.jpg">
 
       <!-- Google Analytics Tracker -->
@@ -31,7 +34,6 @@
     </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <!-- end: Google Analytics Tracker -->
-
 
     </head>
    
@@ -63,6 +65,7 @@
           <div class="dropdown-content">
             <a href="roster.html">Roster</a>
             <a href="fees.html">Fees and Dues</a>
+            <a href="links.html">Important Links</a>
             <a href="15s.html">Play XVs</a>
             <a href="7s.html">Play 7s</a>
           </div>
@@ -83,41 +86,68 @@
     </div>  <!-- end: navbar -->
 
 <div class="page">
+  <div id="push-header"></div>
 
 <!--*** CONTENT START *********************************************************-->
 
 <div class="content">
     <h1>Player Responsibilities</h1>
-    <h2>Dues</h2>
 
-    <h3>Dues Payment</h3>
-    <ul>
-      <li>$125 for Returning Players</li>
-      <li>$100 for New Players and Students</li>
-    </ul>
-    <h3>Payment Options</h3>
-    <ul>
-      <li>PayPal</li>
-      <li>Venmo (@PWFRC1976)</li>
-      <li>Cash Payment (labeled envelope) or Check given at</li>
-      <li>Cash Payment in envelope labeled "DUES" with your name</li>
-    </ul>
+    <h3>Dues</h3>
+    <p>All players are expected to pay dues. However, we never want a player's financial situation to keep them from playing rugby with us. Our treasurer can accomodate payment plans for help with dues and CIPP fees. Before their first game, all players are expected to have CIPPed themselves and at least set up a payment plan (if not paying full dues at once). For any questions about dues, payment plans, or CIPPing, email our treasurer at <a href="mailto:treasurer@pwrfc.org">treasurer@pwrfc.org</a>.</p>
 
-    <h2>CIPP</h2>
-    <h2>"Points" (Fundraising/Admin)</h2>
+    <h4>Dues Payment</h4>
+    <table align="center" style="text-align:left; font-size:16px;">
+      <tr><td>$125</td><td>Returning Players</td></tr>
+      <tr><td>$100</td><td>New Players, Students</td></tr>
+      <tr><td>$50</td><td>Social Players</td></tr>
+    </table>
+    
+    <h4>Payment Options</h4>
+    <table id="fees-table" align="center" border="1">
+      <tr><td>PayPal</td>
+        <td style="text-align:center;">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="H8PZJ6HK6CDXW">
+            <table>
+              <tr><td style="text-align:center; font-size: 14px;">
+                <input type="hidden" name="on0" value="Dues Options">Dues Options</td>
+              </tr>
+              <tr><td style="text-align:center; font-size: 14px;">
+              <select name="os0">
+                <option value="Returning Player">Returning Player $125.00 USD</option>
+                <option value="Rookie or Student">Rookie or Student $100.00 USD</option>
+                <option value="Social">Social $50.00 USD</option>
+              </select> 
+              </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </td>
+      </tr>
+      <tr><td>Venmo</td><td>@PWRFC1976</td></tr>
+      <tr><td>Check</td><td>Made out to:<br>Philadelphia Women's<br>Rugby Football Club</td></tr>
+      <tr><td>Cash</td><td>In envelope labeled <br>with name and "DUES"</td></tr>
+    </table>
+
+    <h3>CIPP</h3>
+    <h3>Linc Shifts and the "Points System"</h3>
+
+    <p>In order to run the club and keep the cost of dues low for players, our club organizes many fundraising efforts. Our biggest source of income is working a food stand for Aramark at <bold>Lincoln Financial Field</bold> for Eagles Games. Our Linc coordinator calculates the minimum number of shifts each player is required to work in order for us to keep our contract with Aramark. For the 2016 season, returning players are required to work 3 shifts and rookies 2 shifts. The penalty for a playing skipping their Linc shift without finding a replacement is $60/shift.</p>
+
+    <p>The <bold>"points system"</bold> is the method by which the club ensures that players are equally contributing to club administrative and fundraising tasks. At the conclusion of each spring season, players who have earned a surplus of points above the average are paid for their extra effort in helping the club run. Players who have accumulated points below average will pay penalties. Points can be earned in a number of ways including: Working Linc shifts, organize a fundraising, hold a board or chair position, wash team jerseys or pinnies, or even invite friends to our fundraisers.</p>
 </div>
 
 <!--*** CONTENT END *********************************************************-->
-
+<div id="push-footer"></div>
   </div> <!-- end: page -->
   
     <div class="footer">
       <div class="footer-vert-block">
         <h1>Philadelphia Women's Rugby Football Club</h1>
-        <p>
-            PO Box 8163 <br>
-            Philadelphia, PA 19101<br>
-        </p>
         <div class="social-links">
           <a onclick="_gaq.push(['_trackPageview', '/links/facebook']);" href="http://www.facebook.com/pages/Philadelphia-PA/Philadelphia-Womens-Rugby-Football-Club/22223745944" target="_new"><img src="image/facebook.png" name="facebook" alt="facebook" style="padding: 1px; border: 0px;"></a>
           <a onclick="_gaq.push(['_trackPageview', '/links/twitter']);" href="http://twitter.com/PhillyWRFC" target="_new"><img src="image/twitter.png" name="twitter" alt="twitter" style="padding: 1px; border: 0px;"></a>
